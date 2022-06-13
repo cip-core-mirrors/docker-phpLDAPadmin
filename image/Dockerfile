@@ -43,4 +43,4 @@ ADD environment /container/environment/99-default
 VOLUME ["/var/www/phpldapadmin"]
 
 # Expose http and https default ports
-EXPOSE 80 443
+EXPOSE 8080 8443

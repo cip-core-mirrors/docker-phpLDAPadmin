@@ -22,7 +22,8 @@ spec:
             - name: ldap-client-certs
               mountPath: /container/service/ldap-client/assets/certs
           ports:
-            - containerPort: 443
+            - containerPort: 8080
+            - containerPort: 8443
           env:
             - name: PHPLDAPADMIN_LDAP_HOSTS
               value: "#PYTHON2BASH:[{'ldap.example.org': [{'server': [{'tls': 'true'}]}]}]"
